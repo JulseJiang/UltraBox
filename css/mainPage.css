@@ -1,0 +1,115 @@
+*{
+	margin: 0 0;
+	padding: 0 0;
+	font-family: "微软雅黑";
+}
+.mask {
+    background: #000000;
+    opacity: 0.45;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    display: none;
+}
+.margin-top{
+	margin-top: 15px;
+}
+.mainpage{
+	position: absolute; 
+	z-index: 2;
+}
+.top-right{
+	padding-right: 0;
+}
+.img-user{
+	width: 60px;
+}
+.size1{
+	font-size: 20px;
+}
+.size2{
+	font-size: 11px;
+}
+.size3{
+	font-size: 13px;
+}
+.size4{
+	font-size:14px;
+}
+.img-check{
+	width: 17px;
+}
+.color1{
+	color: #bfbfbf;
+}
+.none-padding{
+	padding:0 0;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right; 
+}
+.img-percent{
+	 width: 70px;
+}
+.part{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+.part-back1{
+	background: #96D096;
+}
+.margin-top1{
+	margin-top: 10px;
+}
+.part-back2{
+	background: #E4E4E4;
+}
+.part-back3{
+	background: #D8D685;
+}
+.img-location{
+	width: 25px;
+	margin-top: -8px;
+}
+.margin-top2{
+	margin-top: 2px;
+}
+.row-box-left{
+	margin-left: 15px;
+}
+.row-box-right{
+	margin-right: 2px;
+}
+.indent{
+	text-indent: 2em;
+}
+.img-love{
+	width: 30px;
+}
+.hour{
+	width: 70px;
+	height: 30px; 
+	text-align: center;
+	line-height: 30px; 
+	border-radius: 5px;
+}
+.day{
+	margin-left: 75px;
+}
+.padding-right{
+	padding-right: 0px;
+}
+.hr-style{
+	border: #e4e4e4 2px solid; margin: 2px 0;
+}
+.margin-top3{
+	margin-top: 6px;
+}
+.img-notice{
+	width: 85px;
+}
