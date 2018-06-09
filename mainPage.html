@@ -50,7 +50,7 @@
 				</div>
 				<div class="col-xs-12">
 					<b class="size3">箱体定位：成都市都江堰市青城山镇青城山</b>
-					<img src="img/location.png" class="img-location float-right"/>
+					<a href="position.html"><img src="img/location.png" class="img-location float-right"/></a>
 				</div>
 			</div>
 			
@@ -173,110 +173,18 @@
 					<img src="img/down.png" class="img-love margin-top3"/><span class="size3">下拉刷新，取消当前选择</span><br />
 					<img src="img/long.png" class="img-love margin-top3" /><span class="size3">长按切换箱体的连通状态</span>
 				</div>
+				<a href="guides.html">
 				<div class="col-xs-5 text-center">
 					<img src="img/notice.png" class="img-notice" />
 					<p class="size3 text-left">这是一个多雨的地方，听说雨衣和爬山更配哦...</p>
 				</div>
+				</a>
 			</div>
 		</div>
 		
-		<!--阴影-->
-		<div class="mask" onclick="shadow()"></div>
-		
-		<!--个人信息-->
-		<div class="info" style="background: #FFFFFF;position: relative; z-index: 5;border: #CCCCCC 2px solid;display: none;">
-			<div class="" style="padding: 0 15px;">
-				<div class=" text-center" style="margin-top: 15px;">
-					<img src="img/user.png" style="width: 60px;"/>
-					<span style="font-size: 20px;">江小白</span>
-				</div>
-				<div class=" text-center">
-					<img src="img/check1.png" style="width: 17px;" />
-					<span style="color: #707070;font-size: 11px;">已实名认证，储物保障中</span>
-					<img src="img/edit.png" style="width: 25px; margin-top: -5px;float: right;"/>
-				</div>
-			</div>
-			<hr style="border:#707070 1px solid;margin: 0 15px;" />
-				
-				
-			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel" style="padding: 0 15px;">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none;color: #333333;">
-                    	<div class="panel-heading" role="tab" id="headingOne"  style="padding: 15px 0;">
-                    		<img src="img/storage.png" style="width: 30px;" />&nbsp;存储记录
-                    	</div>
-                    </a>
-                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body" style="">
-                            <p style="margin-bottom: 0px;">暂无 </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel" style="padding: 0 15px;">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration: none;color: #333333;">
-                    	<div class="panel-heading" role="tab" id="headingTwo" style="padding: 15px 0;">
-                        	<img src="img/number.png" style="width: 30px;" />&nbsp;取货码
-                        </div>
-                    </a>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                            <p style="margin-bottom: 0px;">暂无</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel" style="padding: 0 15px;">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration: none;color: #333333;">
-                    	<div class="panel-heading" role="tab" id="headingThree" style="padding: 15px 0;">
-                    		<img src="img/notify.png" style="width: 30px;" />&nbsp;通知(3)
-                		</div>
-                    </a>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                        	<ul style="list-style-type: none;">
-                        		<li style="margin-bottom: 10px;">您在青城前山QCS02中存储的物品已经超过一天了,您存储的物品想您...<span style="float: right;">10:12</span></li>
-                        		<li style="margin-top: 10px;">存储成功,希望您旅途愉快!如果遇到问题,欢迎查看攻略模块,扫清更多旅行...<span style="float: right;">10:12</span></li>
-                        		<li style="margin-top: 10px;">快递小哥已经把您购买的宝贝放入宝箱咯,两日之内存放免费.<span style="float: right;">10:12</span></li>
-                        	</ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-				
-		</div>
-		
-		
-		
-	<script src="js/jquery-3.1.1.min.js"></script>	
-	<script src="js/bootstrap.min.js"></script>
-	<script>
-		$(function(){
-//			console.log((($('.box-width').width()-38)/5)+"px");
-//			console.log($('.box').height(($('.box-width').width()/5)));
-			$('.box-height').height($('.box-height').width());
-			$('.box').height((($('.box-width').width()-38)/5)+"px");
-			$('.box').width((($('.box-width').width()-38)/5)+"px");
-			
-			var sHeight = document.documentElement.scrollHeight;
-			var sWidth = document.documentElement.scrollWidth;
-//			console.log(sWidth);
-//			alert($(window).height()); 
-			$('.info').height(sHeight);
-			$('.info').width(sWidth*0.8);
-			
-			var oMask = $('.mask');
-			oMask.height(sHeight+'px');
-			oMask.width(sWidth+'px');
-		});
-		function user(){
-			$('.mask').css('display','block');
-			$('.info').css('display','block');
-		}
-		function shadow(){
-			$('.mask').css('display','none');
-			$('.info').css('display','none');
-		}
-	</script>
+		<script src="js/jquery-3.1.1.min.js"></script>	
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/layer/layer.js"></script>
+		<script src="js/mainPage.js"></script>
 	</body>
 </html>

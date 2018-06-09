@@ -1,0 +1,49 @@
+.box-info{
+	background-color: #FFFFFF;
+	position: absolute; 
+	z-index: 5;
+	/*border: #CCCCCC 2px solid;*/
+	/*display: none;*/
+}
+.padding{
+	padding: 0 15px;
+}
+.margin-top{
+	margin-top: 15px;
+}
+.img-user{
+	width: 60px;
+}
+.size1{
+	font-size: 20px;
+}
+.img-check{
+	width: 17px;
+}
+.color2{
+	color: #707070;
+}
+.size2{
+	font-size: 11px;
+}
+.float-right{
+	float: right; 
+}
+.img-location1{
+	width: 25px;
+	margin-top: -5px;
+}
+.hr-style1{
+	border:#707070 1px solid;
+	margin: 0 15px;
+}
+.panel-group a{
+	color: #333;
+	text-decoration: none;
+}
+a:visited{
+	color: #333333;
+}
+.margin-top1{
+	margin-top: 10px;
+}

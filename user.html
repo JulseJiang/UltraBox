@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>用户信息</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/user.css" />
+	</head>
+	<body>
+		<div class="info box-info">
+			<div class="padding">
+				<div class=" text-center margin-top">
+					<img src="img/user.png"  class="img-user"/>
+					<span class="size1">江小白</span>
+				</div>
+				<div class=" text-center">
+					<img src="img/check1.png" class="img-check" />
+					<span class="color2 size2">已实名认证，储物保障中</span>
+					<img src="img/edit.png" class="float-right img-location1"/>
+				</div>
+			</div>
+			<hr  class="hr-style1" />
+				
+				
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel padding">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                    	<div class="panel-heading" role="tab" id="headingOne"  style="padding: 15px 0;">
+                    		<img src="img/storage.png" class="img-love" />&nbsp;存储记录
+                    	</div>
+                    </a>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body" style="">
+                            <p style="margin-bottom: 0px;">暂无 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel padding">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                    	<div class="panel-heading" role="tab" id="headingTwo" style="padding: 15px 0;">
+                        	<img src="img/number.png" class="img-love" />&nbsp;取货码
+                        </div>
+                    </a>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <p style="margin-bottom: 0px;">暂无</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel padding">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+                    	<div class="panel-heading" role="tab" id="headingThree" style="padding: 15px 0;">
+                    		<img src="img/notify.png" class="img-love" />&nbsp;通知(3)
+                		</div>
+                    </a>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                        	<ul style="list-style-type: none;padding: 0 0; ">
+                        		<li style="margin-bottom: 10px;">您在青城前山QCS02中存储的物品已经超过一天了,您存储的物品想您...<span class="float-right">10:12</span></li>
+                        		<li class="margin-top1">存储成功,希望您旅途愉快!如果遇到问题,欢迎查看攻略模块,扫清更多旅行...<span class="float-right">10:12</span></li>
+                        		<li class="margin-top1">快递小哥已经把您购买的宝贝放入宝箱咯,两日之内存放免费.<span class="float-right">10:12</span></li>
+                        	</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/user.js"></script>
+	</body>
+</html>

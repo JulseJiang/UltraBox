@@ -5,16 +5,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<title>定位</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-	</head>
+		<link rel="stylesheet" href="css/position.css" />
+	</head>	
 	
 	<body>
 		<div class="container">
-			<div class="col-xs-12" style="border: #707070 1px solid;margin-top: 15px;border-radius: 20px;">
+			<div class="col-xs-12 border">
 				<img src="img/search.png" />
-				<input type="text" placeholder="请输入城市名称" style="height: 32px;border-style: none;outline: none;"/>
- 				<input type="button" class="btn btn-info btn-xs " value="搜索" style="outline: none;margin-top: 6px;float: right;"/>
+				<input type="text" placeholder="请输入城市名称" class="text-style"/>
+ 				<input type="button" class="btn btn-info btn-xs btn-style" value="搜索"/>
 			</div>
 		</div>
+		
+		<!--地图-->
+		<div class="box">
+		    <div id="container3" class="container fl"></div>
+		     	<ul class="list fl">
+		     		<li> <a href="javascript:void(0)">都江堰景点</a> </li>
+				    <li> <a href="javascript:void(0)">青城前山</a> </li>
+				    <li> <a href="javascript:void(0)">青城后山</a> </li>
+				    <li> <a href="javascript:void(0)">成都东软学院</a> </li>
+				    <li> <a href="javascript:void(0)">成都春熙路</a> </li>
+		  		</ul>
+	    </div>
 	</body>
+	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="http://api.map.baidu.com/api?v=2.0&ak=A1LU7iHS0avqQwPLAxbhKn0UYSQCuRVH"></script>
+	<script src="js/jquery.baiduMap.min.js"></script>
+	<script src="js/position.js"></script>
 	
 </html>

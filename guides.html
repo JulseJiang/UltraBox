@@ -5,90 +5,72 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<title>攻略</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/guides.css">
 	</head>
-	
-	<style>
-		.guides:hover, .food:hover, .culture:hover{
-			background: #61C8B4;
-		}
-	</style>
 	
 	<body>
 		<div class="container pic">
 			<!--图片-->
-			<div class="row" style="padding: 15px 0;">
-				<div class="col-xs-12" style="">
-					<img src="img/place.jpg" class="pic_place" style="width: 300px;"/>
+			<div class="row padding" >
+				<div class="col-xs-12">
+					<img src="img/place.jpg" class="pic_place pic_width"/>
 				</div>
 			</div>
 			
 			<!--导航-->
-			<div class="nav text-center" style="width: 100%;height: 40px;">
-				<div class="guides" style="float: left; height: 40px;line-height: 40px;border-radius: 20px 0 0 20px;border-left: #CCCCCC 1px solid;border-top: #CCCCCC 1px solid;border-bottom:#CCCCCC 1px solid;" >攻略</div>
-				<div class="food" style="float: left;height: 40px;line-height: 40px;border-top: #CCCCCC 1px solid;border-bottom: #CCCCCC 1px solid;">美食</div>
-				<div class="culture" style="float: left;height: 40px;line-height: 40px;border-radius: 0 20px 20px 0;border-right: #CCCCCC 1px solid;border-top: #CCCCCC 1px solid;border-bottom:#CCCCCC 1px solid;">人文</div>
+			<div class="nav text-center nav-style">
+				<div class="guides float-left div_style guides_style">攻略</div>
+				<div class="food float-left div_style">美食</div>
+				<div class="culture float-left div_style culture_style">人文</div>
 			</div>
 			<!--面板-->
-			<div class="panel " style="margin:15px 0 0 0;float: left;display: block;overflow-y: auto;">
-				<div> 
-					<b style="font-size: 17px;">一天搞定青城后山（全程无辅助）</b>
-					<div style="text-indent: 2em;">
-						实践证明，半天时间无辅助爬完青城山后山是完全可行的。准确来说，整个行程是一天，但实际爬山只花了5个小时，其他时间...
-						<div style="float: right;">
-							<img src="img/love.png" style="width: 20px;"/><span>123</span><span>&nbsp;&nbsp;13:32</span>
+			<div id="box">
+				<div class="panel panel-gulide float-left over margin">
+					<template v-for="(guides,index) in guides">
+						<div> 
+							<b class="size">{{guides.title}}</b>
+							<div class="text">
+								{{guides.context}}
+								<div class="float-right">
+									<img src="img/love.png" class="width"/><span>{{guides.num}}</span><span>&nbsp;&nbsp;{{guides.time}}</span>
+								</div>
+							</div>
+							<p class="margin-top"><a href="#" class="color">文章来源：{{guides.source}}</a></p>
 						</div>
-					</div>
-					<p style="margin-top: 21px;"><a href="#" style="color: #CCCCCC;">文章来源：http://www.baidu.com</a></p>
+					</template>
 				</div>
-				
-				<div> 
-					<b style="font-size: 17px;">带雨衣，带雨衣！！</b>
-					<div style="text-indent: 2em;">
-						刚到半山腰就下雨了，带了一把伞，但很多地方比较危险，拿着雨伞不太方便，雨天爬山太危险了，后悔出门没看天气预报，下次...
-						<div style="float: right;">
-							<img src="img/love.png" style="width: 20px;"/><span>56</span><span>&nbsp;&nbsp;2018/4/20 13:32</span>
+				<div class="panel panel-food margin1 over" style="margin-top: 15px;">
+					<template v-for="(food,index) in food">
+						<div> 
+							<b class="size">{{food.title}}</b>
+							<div class="text">
+								{{food.context}}
+								<div class="float-right">
+									<img src="img/love.png" class="width"/><span>{{food.num}}</span><span>&nbsp;&nbsp;{{food.time}}</span>
+								</div>
+							</div>
+							<p class="margin-top"><a href="#" class="color">文章来源：{{food.source}}</a></p>
 						</div>
-					</div>
-					<p style="margin-top: 21px;"><a href="#" style="color: #CCCCCC;">文章来源：http://www.baidu.com</a></p>
+					</template>
 				</div>
-				
-				<div> 
-					<b style="font-size: 17px;">买早一点的票</b>
-					<div style="text-indent: 2em;">
-						4月23号和两个同学一起去了青城山，青城山分前山和后山，前山主要是道观、烧香拜佛的地方，没什么爬山的地方，要想爬山，观...
-						<div style="float: right;">
-							<img src="img/love.png" style="width: 20px;"/><span>77</span><span>&nbsp;&nbsp;2018/4/20 13:32</span>
+				<div class="panel panel-culture margin1 over" style="margin-top: 15px;">
+					<template v-for="(culture,index) in culture">
+						<div> 
+							<b class="size">{{culture.title}}</b>
+							<div class="text">
+								{{culture.context}}
+								<div class="float-right">
+									<img src="img/love.png" class="width"/><span>{{culture.num}}</span><span>&nbsp;&nbsp;{{culture.time}}</span>
+								</div>
+							</div>
+							<p class="margin-top"><a href="#" class="color">文章来源：{{culture.source}}</a></p>
 						</div>
-					</div>
-					<p style="margin-top: 21px;"><a href="#" style="color: #CCCCCC;">文章来源：http://www.baidu.com</a></p>
+					</template>
 				</div>
-			</div>
-			<div class="panel" style="background: gray;margin: 0 0;margin-top: 15px;display: none;">
-				
-			</div>
-			<div class="panel" style="background: yellowgreen;margin: 0 0;margin-top: 15px;display: none;">
-				
 			</div>
 		</div>
-		
-		
 	</body>
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script>
-//		alert($('.pic').height());
-//		console.log($('.pic').width());
-		$('.pic_place').width($('.pic').width());
-//		console.log($('.nav').width()/3);
-		var oNav = $('.nav').width()/3;
-		$('.guides').width(oNav-1);
-		$('.food').width(oNav);
-		$('.culture').width(oNav-1);
-		
-		
-		var oHeight = $(window).height();
-//		alert($('.pic').height());
-		$('.panel').height(oHeight-$('.pic_place').height()-$('.nav').height()-30-17);
-		$('.panel').width($('.nav').width()-2);
-		
-	</script>
+	<script src="js/vue.js"></script>
+	<script src="js/guides.js"></script>
 </html>
